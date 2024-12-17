@@ -1,0 +1,1 @@
+This code uses an undefined constant in a string concatenation.  PHP will not throw a parse error, but will instead output the literal string "UNEXPECTED_CONSTANT" instead of its value, potentially leading to unexpected behavior or vulnerabilities if this string is used elsewhere in the application.  The use of a constant that's not defined makes this difficult to spot.
